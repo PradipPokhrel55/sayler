@@ -68,7 +68,7 @@ const ProductDetail = () => {
   }
 
   return (
-    <div className="flex flex-col md:flex-row p-6 bg-white shadow-lg rounded-lg">
+    <div className="flex flex-col md:flex-row p-6 min-h-[90vh] bg-white shadow-lg rounded-lg">
       <div className="flex-1 mb-4 md:mb-0 md:mr-4">
         {product.images ? (
           <img

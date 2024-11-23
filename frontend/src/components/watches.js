@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import CarouselComponent from './carousel.js'
 
 
 const Watches = ({searchQuery}) => {
@@ -70,6 +70,7 @@ const Watches = ({searchQuery}) => {
 
     return (
         <div className="p-4">
+            <CarouselComponent />
             <h1 className="text-2xl font-bold mb-4">Watches</h1>
 
             {error && <p className="text-red-500">{error}</p>}

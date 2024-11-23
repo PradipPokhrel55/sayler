@@ -54,7 +54,7 @@ SECRET_KEY = 'django-insecure-a*n)yg5ag2ee_&6g7df#n!wnmjocqse$%ep=l#prh-evuf9)-g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app']
 
 from decouple import config
 

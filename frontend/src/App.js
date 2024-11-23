@@ -42,7 +42,7 @@ function App() {
       
       <Header setSearchQuery={setSearchQuery} />
       
-      <CarouselComponent />
+      
       
         <Routes>
           <Route path='/home' element={<Sales searchQuery={searchQuery} />}></Route>

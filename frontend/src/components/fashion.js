@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
+import CarouselComponent from './carousel.js'
 
 
 const Fashion = ({ searchQuery }) => {
@@ -65,6 +65,7 @@ const Fashion = ({ searchQuery }) => {
 
     return (
         <div className="p-4">
+            <CarouselComponent />
             <h1 className="text-2xl font-bold mb-4">Fashion Data</h1>
 
             {error && <p className="text-red-500">{error}</p>}

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import CarouselComponent from './carousel.js'
 
 const Electronics = ({ searchQuery }) => {
     const [electronicsData, setElectronicsData] = useState([]);
@@ -67,6 +68,7 @@ const Electronics = ({ searchQuery }) => {
 
     return (
         <div className="p-4">
+            <CarouselComponent />
             <h1 className="text-2xl font-bold mb-4">Electronics Data</h1>
             {error && <p className="text-red-500">{error}</p>}
             {filteredElectronics.length > 0 ? (
