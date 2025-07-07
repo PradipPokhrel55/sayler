@@ -13,3 +13,6 @@ class Electronics(models.Model):
 
     def _str_(self):
         return f"{self.brand}{self.device}"
+    
+    class Meta:
+        ordering = ['-release_date']
